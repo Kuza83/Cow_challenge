@@ -1,5 +1,6 @@
 FROM ubuntu:24.04
 
-RUN apt update
+RUN apt update && mkdir challenge
 
-CMD [ "mkdir", "cow" ]
+WORKDIR /challenge
+
