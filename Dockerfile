@@ -4,3 +4,6 @@ RUN apt update && mkdir challenge
 
 WORKDIR /challenge
 
+COPY cow.go cow.go
+
+RUN ./cow.go
