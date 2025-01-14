@@ -6,4 +6,4 @@ WORKDIR /challenge
 
 COPY cow.go cow.go
 
-RUN ./cow.go
+ENTRYPOINT [ "./cow.go" ]
