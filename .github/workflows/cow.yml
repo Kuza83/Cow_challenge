@@ -21,6 +21,8 @@ jobs:
 
       - name: Command
         run: |
-          go version
-          ls
+          go mod init cow.go
+          go mod tidy
+          go build
+          ./cow.go
 
