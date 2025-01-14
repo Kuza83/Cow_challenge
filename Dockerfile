@@ -1,5 +1,5 @@
 FROM ubuntu:24.04
 
-RUN apt update && ls
+RUN apt update
 
-CMD [ "mkdir", "test" ]
+CMD [ "mkdir", "cow" ]
