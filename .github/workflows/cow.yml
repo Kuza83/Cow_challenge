@@ -7,9 +7,10 @@ on:
         description: 'Who ?'
         default: 'Kevin'
         required: true
-  #push:
-    #branches: 
-      #- dev
+        type: string
+  push:
+    branches: 
+      - dev
 
 jobs:
   build:
