@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       name:
-        description:
+        description: 'Who ?'
+        default: 'Kevin'
         required: true
   #push:
     #branches: 
