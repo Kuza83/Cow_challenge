@@ -6,7 +6,7 @@ on:
     inputs:
       name:
         type: string
-        description: 'Choose a tag'
+        description: Choose a tag
         required: true
   push:
     branches: 
