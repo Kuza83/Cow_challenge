@@ -54,9 +54,9 @@ jobs:
       - name:
         uses: actions/download-artifact@v4
         with:
-          path: ./
+          path: ./challenge
           name: cowsaybin
-                
+
       - name: Build and push on dockerhub
         uses: docker/build-push-action@v6
         with:
