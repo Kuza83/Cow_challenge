@@ -58,6 +58,11 @@ jobs:
           push: true          
           tags: ${{ steps.meta.outputs.tags }}_${{github.event.input.name}}
           labels: ${{ steps.meta.outputs.labels }}
+      - name:
+        uses: actions/download-artifact@v4
+        with:
+          path: ./
+          name: cowsaybin
       
 
 
