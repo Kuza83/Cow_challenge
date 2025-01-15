@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: write input
+        run: echo "Hello ${{github.event.inpus.name}}"
+
       - name: Checkout
         uses: actions/checkout@v4
 
