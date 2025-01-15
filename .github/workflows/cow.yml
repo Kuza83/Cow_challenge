@@ -35,7 +35,7 @@ jobs:
         id: deployment
         uses: actions/upload-artifact@v4
         with:
-          path: .
+          path: cow.go
           name: cowsaybin
 
       - name: Docker meta
