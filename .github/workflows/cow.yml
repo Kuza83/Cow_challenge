@@ -1,16 +1,17 @@
+---
 name: Build and Deploy cowsay on DockerHub
 
 on:
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'Who ?'
-        default: 'Kevin'
-        required: true
-        type: string
-  push:
-    branches: 
-      - dev
+    workflow_dispatch:
+      inputs:
+        name:
+          description: 'Who ?'
+          default: 'Kevin'
+          required: true
+          type: string
+    push:
+      branches: 
+        - dev
 
 jobs:
   build:
